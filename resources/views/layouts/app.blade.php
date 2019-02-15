@@ -34,6 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        @auth
                         <li class="nav-item">
                             <a href="{{ route('posts.index') }}" class="nav-link">Posts</a>
                         </li>
@@ -45,6 +46,7 @@
                         <li class="nav-item">
                             <a href="{{ route('posts.create') }}" class="nav-link">Nueva Entrada</a>
                         </li>
+                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
